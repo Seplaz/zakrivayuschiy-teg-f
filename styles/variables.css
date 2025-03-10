@@ -1,1 +1,14 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --main-font: "Inter";
+  --main-font-card-title: 700;
+  --main-font-card-text: 400;
+  --additional-font: "Press Start 2P";
+  
+  --header-inline-size: 100%;
+  --header-title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --header-subtitle-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+
+  --primary-color: #000000;
+  --secondary-color: #ffffff;
+}
