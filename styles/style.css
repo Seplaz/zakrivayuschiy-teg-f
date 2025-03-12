@@ -174,13 +174,13 @@
 .dialog[open] {
   display: flex;
   flex-direction: column;
+  justify-self: center;
   justify-content: center;
   align-items: center;
   gap: 30px;
+  align-self: center;
   padding: 30px;
   max-inline-size: 353px;
-  align-self: center;
-  justify-self: center;
 }
 
 .dialog[open]::backdrop {
