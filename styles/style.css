@@ -198,6 +198,7 @@
 .dialog__icon {
   inline-size: 39px;
   block-size: 39px;
+  flex-shrink: 0;
 }
 
 .dialog__text {
