@@ -185,7 +185,7 @@
 
 .dialog[open]::backdrop {
   color: var(--dark-color, #000);
-  backdrop-filter: opacity(75%);
+  opacity: 0.75;
 }
 
 .dialog__content {
