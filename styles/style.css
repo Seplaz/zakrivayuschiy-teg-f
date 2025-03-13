@@ -75,6 +75,7 @@
 
 .card__label {
   position: absolute;
+  z-index: 1;
   opacity: 0.5;
   font-family: var(--secondary-font, serif);
   font-weight: 400;
@@ -103,6 +104,34 @@
   inline-size: 100%;
   block-size: 100%;
   aspect-ratio: 1 / 1;
+}
+
+.invert {
+  filter: invert(100%);
+}
+
+.brightness {
+  filter: brightness(120%);
+}
+
+.hue {
+  filter: hue-rotate(90deg);
+}
+
+.contrast {
+  filter: contrast(130%);
+}
+
+.blur {
+  filter: blur(2px);
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
+.mixed-filter {
+  filter: brightness(105%) contrast(110%) hue-rotate(20deg);
 }
 
 .card__content-container {
@@ -167,7 +196,6 @@
 }
 
 .button__save-icon {
-  flex-shrink: 0;
   inline-size: 21px;
   block-size: 21px;
 }
@@ -175,18 +203,13 @@
 .dialog[open] {
   display: flex;
   flex-direction: column;
-  justify-self: center;
-  justify-content: center;
-  align-items: center;
   gap: 30px;
-  align-self: center;
   padding: 30px;
-  max-inline-size: 353px;
 }
 
 .dialog[open]::backdrop {
   opacity: 0.75;
-  color: var(--dark-color, #000);
+  background-color: var(--dark-color, #000);
 }
 
 .dialog__content {
@@ -194,6 +217,11 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+
+.dialog__icon {
+  inline-size: 39px;
+  block-size: 39px;
 }
 
 .dialog__text {
@@ -210,7 +238,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 9px 17px;
+  padding: 10px 17px;
   inline-size: 100%;
 }
 
@@ -232,7 +260,7 @@
     block-size: 28px;
   }
 
-  .dialog[open] {
-    max-inline-size: 341px;
+  .dialog__text {
+    max-inline-size: 198px;
   }
 }
