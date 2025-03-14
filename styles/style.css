@@ -160,14 +160,30 @@
   display: flex;
   gap: 6px;
   align-self: end;
+  max-block-size: 38px;
 }
 
 .card__icon-button {
   display: flex;
   border: none;
+  border: 2px solid transparent;
   padding: 0;
   background: none;
+  transition: border 0.3s ease;
   cursor: pointer;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  border: 2px solid var(--accent-color, #000);
+}
+
+.like-icon {
+  inline-size: 36px;
+  block-size: 34px;
 }
 
 .button {
@@ -215,7 +231,7 @@
   block-size: 38px;
 }
 
-.button__save {
+.button--save {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -223,9 +239,12 @@
   padding: 15px 20px;
 }
 
-.button__save-icon {
+.button__icon {
+  position: relative;
+  z-index: 1;
   inline-size: 21px;
   block-size: 21px;
+  mix-blend-mode: difference;
 }
 
 .dialog[open] {
