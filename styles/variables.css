@@ -13,7 +13,7 @@
   --accent-color: #000000;
   --main-color: #ffffff;
 
-  --page-background: repeating-linear-gradient(to right, #d3d3d3 0% 2px, transparent 2px 4px),
-                repeating-linear-gradient(to bottom, #d3d3d3 0% 2px, transparent 2px 4px),
-                repeating-linear-gradient(to bottom, #e7e7e7 0% 0.01%, #1a1a1a 100%);
+  --page-background: repeating-linear-gradient(to right, #d3d3d3 0% 2px, transparent 2px 4px), 
+                     repeating-linear-gradient(to bottom, #d3d3d3 0% 2px, transparent 2px 4px),
+                     repeating-linear-gradient(to bottom, #e7e7e7 0% 0.01%, #1a1a1a 100%);
 }

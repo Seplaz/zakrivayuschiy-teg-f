@@ -200,13 +200,13 @@
 
 .button__text {
   position: relative;
+  z-index: 1;
+  color: var(--main-color, #fff);
   font-family: var(--accent-font, serif);
   font-weight: 400;
   font-size: 14px;
   text-align: center;
-  color: var(--main-color, #fff);
   mix-blend-mode: difference;
-  z-index: 1;
 }
 
 .card__like-button {
@@ -217,7 +217,6 @@
 
 .button__save {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 8px;
   margin-block-end: 105px;
