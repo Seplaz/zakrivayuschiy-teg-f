@@ -237,6 +237,7 @@
   gap: 8px;
   margin-block-end: 105px;
   padding: 15px 20px;
+  color: var(--main-color, #fff);
 }
 
 .button__icon {
