@@ -170,7 +170,7 @@
   border: 2px solid transparent;
   padding: 0;
   background: none;
-  transition: border 0.3s ease, fill 3s;
+  transition: border 0.3s ease, fill 10s linear;
   cursor: pointer;
 }
 
@@ -180,14 +180,6 @@
 
 .card__icon-button:focus-visible {
   border: 2px solid var(--accent-color, #000);
-}
-
-.card__icon-button:hover .core {
-  fill: var(--accent-color);
-}
-
-.card__icon-button:hover .main-body {
-  fill: var(--accent-color);
 }
 
 .sparks {
