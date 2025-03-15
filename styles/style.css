@@ -99,7 +99,7 @@
     -webkit-text-stroke: 1px var(--main-color, #fff);
     text-stroke: 1px var(--main-color, #fff);
   }
-} 
+}
 
 .card__image {
   object-fit: cover;
@@ -158,8 +158,9 @@
 
 .card__button-container {
   display: flex;
-  gap: 6px;
+  gap: 4px;
   align-self: end;
+  align-items: start;
   max-block-size: 38px;
 }
 
@@ -169,7 +170,7 @@
   border: 2px solid transparent;
   padding: 0;
   background: none;
-  transition: border 0.3s ease;
+  transition: border 0.3s ease, fill 3s;
   cursor: pointer;
 }
 
@@ -181,9 +182,16 @@
   border: 2px solid var(--accent-color, #000);
 }
 
-.like-icon {
-  inline-size: 36px;
-  block-size: 34px;
+.card__icon-button:hover .core {
+  fill: var(--accent-color);
+}
+
+.card__icon-button:hover .main-body {
+  fill: var(--accent-color);
+}
+
+.sparks {
+  opacity: 0;
 }
 
 .button {
